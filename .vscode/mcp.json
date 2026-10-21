@@ -1,0 +1,17 @@
+{
+  "servers": {
+    "edge-devtools": {
+      "command": "npx",
+      "args": [
+        "-y", "chrome-devtools-mcp@1.11.0",
+        "--executablePath=/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge",
+        "--isolated",
+        "--headless=false"
+      ]
+    },
+    "github": {
+      "type": "http",
+      "url": "https://api.githubcopilot.com/mcp/"
+    }
+  }
+}

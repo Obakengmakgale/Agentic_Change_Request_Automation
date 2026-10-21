@@ -1,0 +1,31 @@
+name: Remedy request
+description: Ask the agent to prepare a BMC Remedy service request
+title: "Remedy: "
+labels: [remedy-request]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Describe what you need in plain language. The agent fills in the Remedy form fields it can, asks here for anything missing, and a teammate then saves the draft in Remedy for you to submit.
+  - type: textarea
+    id: request
+    attributes:
+      label: What do you need?
+      placeholder: Log a Network Deployment Service Request with AWS for Centaur Banker non-prod. We need a VPC in Frankfurt to keep the AgentCore endpoint private.
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Network platform
+      options: [AWS, Azure, On Prem]
+      default: 0
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      options: [Non-Prod, Production]
+  - type: input
+    id: contact
+    attributes:
+      label: Alternative contact (email)
