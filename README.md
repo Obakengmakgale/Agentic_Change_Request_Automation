@@ -1,6 +1,5 @@
-# Team 12 — Agentic BMC Remedy Automation
+# Agentic BMC Remedy Automation
 
-CIB Engineering Day 2026 hackathon project.
 
 ## What
 
@@ -72,6 +71,4 @@ To update the workflow, edit the Markdown source and regenerate the lock file
 with `gh aw compile pr-test-cases` using v0.92.0. Commit both files; do not edit
 the generated YAML directly.
 
-## Team
 
-Team 12
